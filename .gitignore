@@ -1,0 +1,44 @@
+# Python
+*.pyc
+
+# Packages
+*.egg
+*.egg-info
+/dist/*
+/build
+/_build
+.cache
+*.so
+
+# Env files
+.env
+.env.backup
+.env.production
+
+# Installer logs
+pip-log.txt
+
+# Virtualenv
+.venv
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+.pytest_cache
+
+# JS
+/node_modules
+npm-debug.log
+yarn-error.log
+
+# Editors
+/.fleet
+/.idea
+/.vscode
+/.zed
+
+# Other
+.DS_Store
+.python-version
+

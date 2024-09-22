@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Expanse</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css?family=Inter:100,400,600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans text-slate-600 bg-slate-50 antialiased dark:bg-slate-900 dark:text-slate-200">
+<div>
+  <div
+    class="relative min-h-screen flex flex-col items-center justify-center selection:bg-[#FF2D20] selection:text-white">
+    <div class="relative w-full max-w-2xl px-6 lg:max-w-7xl">
+      <header class="grid grid-cols-2 items-center py-10 lg:grid-cols-3">
+        <div class="flex items-center gap-2 lg:justify-center lg:col-start-2">
+          <div class="self-center text-center">
+            <a href="https://expanse-framework.com" class="group">
+              <span class="sr-only">Home</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="-50 -50 612 612"
+                class="sm:h-16"
+              >
+                <defs>
+                  <linearGradient
+                    id="linear-gradient"
+                    x1="1583.78"
+                    y1="-53.2"
+                    x2="1808.71"
+                    y2="-53.2"
+                    gradientTransform="translate(394.53 1760.18) rotate(-90)"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0" stop-color="#bce6fa" />
+                    <stop offset="0.17" stop-color="#b7e4f7" />
+                    <stop offset="0.38" stop-color="#a9dfee" />
+                    <stop offset="0.59" stop-color="#92d7df" />
+                    <stop offset="0.82" stop-color="#71ccca" />
+                    <stop offset="1" stop-color="#51c1b5" />
+                  </linearGradient>
+                  <linearGradient
+                    id="linear-gradient-2"
+                    x1="1583.78"
+                    y1="67.48"
+                    x2="1808.71"
+                    y2="67.48"
+                    gradientTransform="translate(188.53 1845.51) rotate(-90)"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0" stop-color="#13bdca" />
+                    <stop offset="1" stop-color="#4abaeb" />
+                  </linearGradient>
+                  <linearGradient
+                    id="linear-gradient-3"
+                    x1="2597.73"
+                    y1="2345.99"
+                    x2="2462.67"
+                    y2="2592.21"
+                    gradientTransform="translate(2803.01 -2380.19) rotate(90)"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0" stop-color="#099bc5" />
+                    <stop offset="0.08" stop-color="#1ea4ca" />
+                    <stop offset="0.54" stop-color="#96d4e6" />
+                    <stop offset="0.86" stop-color="#e1f3f8" />
+                    <stop offset="1" stop-color="#fff" />
+                  </linearGradient>
+                  <linearGradient
+                    id="linear-gradient-4"
+                    x1="2592.5"
+                    y1="2350.66"
+                    x2="2464.64"
+                    y2="2583.75"
+                    xlink:href="#linear-gradient-3"
+                  />
+                  <linearGradient
+                    id="linear-gradient-5"
+                    x1="7707.75"
+                    y1="2345.99"
+                    x2="7572.68"
+                    y2="2592.21"
+                    gradientTransform="matrix(0, -1, -1, 0, 2803.01, 7831.54)"
+                    xlink:href="#linear-gradient-3"
+                  />
+                  <linearGradient
+                    id="linear-gradient-6"
+                    x1="7702.51"
+                    y1="2350.66"
+                    x2="7574.65"
+                    y2="2583.75"
+                    gradientTransform="matrix(0, -1, -1, 0, 2803.01, 7831.54)"
+                    xlink:href="#linear-gradient-3"
+                  />
+                  <linearGradient
+                    id="linear-gradient-7"
+                    x1="1704.46"
+                    y1="67.48"
+                    x2="1929.39"
+                    y2="67.48"
+                    gradientTransform="matrix(0, -1, 1, 0, 273.85, 2051.52)"
+                    xlink:href="#linear-gradient"
+                  />
+                  <linearGradient
+                    id="linear-gradient-8"
+                    x1="1463.1"
+                    y1="188.16"
+                    x2="1688.03"
+                    y2="188.16"
+                    gradientTransform="translate(-102.82 1724.83) rotate(-90)"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0" stop-color="#5459a7" />
+                    <stop offset="1" stop-color="#3e3b97" />
+                  </linearGradient>
+                  <linearGradient
+                    id="linear-gradient-9"
+                    x1="7707.75"
+                    y1="2516.66"
+                    x2="7572.68"
+                    y2="2762.87"
+                    gradientTransform="matrix(0, -1, -1, 0, 2803.01, 7831.54)"
+                    xlink:href="#linear-gradient-3"
+                  />
+                  <linearGradient
+                    id="linear-gradient-10"
+                    x1="7702.51"
+                    y1="2521.33"
+                    x2="7574.65"
+                    y2="2754.41"
+                    gradientTransform="matrix(0, -1, -1, 0, 2803.01, 7831.54)"
+                    xlink:href="#linear-gradient-3"
+                  />
+                  <linearGradient
+                    id="linear-gradient-11"
+                    x1="1583.78"
+                    y1="188.16"
+                    x2="1808.71"
+                    y2="188.16"
+                    gradientTransform="translate(-17.49 1930.84) rotate(-90)"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0" stop-color="#4366b0" />
+                    <stop offset="1" stop-color="#6e9fd5" />
+                  </linearGradient>
+                  <linearGradient
+                    id="linear-gradient-12"
+                    x1="2683.07"
+                    y1="2431.33"
+                    x2="2548"
+                    y2="2677.54"
+                    xlink:href="#linear-gradient-3"
+                  />
+                  <linearGradient
+                    id="linear-gradient-13"
+                    x1="2677.83"
+                    y1="2436"
+                    x2="2549.97"
+                    y2="2669.08"
+                    xlink:href="#linear-gradient-3"
+                  />
+                  <linearGradient
+                    id="linear-gradient-14"
+                    x1="7622.41"
+                    y1="2431.33"
+                    x2="7487.35"
+                    y2="2677.54"
+                    gradientTransform="matrix(0, -1, -1, 0, 2803.01, 7831.54)"
+                    xlink:href="#linear-gradient-3"
+                  />
+                  <linearGradient
+                    id="linear-gradient-15"
+                    x1="7617.18"
+                    y1="2436"
+                    x2="7489.32"
+                    y2="2669.08"
+                    gradientTransform="matrix(0, -1, -1, 0, 2803.01, 7831.54)"
+                    xlink:href="#linear-gradient-3"
+                  />
+                  <linearGradient
+                    id="linear-gradient-16"
+                    x1="1704.46"
+                    y1="188.16"
+                    x2="1929.39"
+                    y2="188.16"
+                    gradientTransform="translate(67.84 2136.86) rotate(-90)"
+                    xlink:href="#linear-gradient-2"
+                  />
+                  <linearGradient
+                    id="linear-gradient-17"
+                    x1="2768.4"
+                    y1="2345.99"
+                    x2="2633.33"
+                    y2="2592.21"
+                    xlink:href="#linear-gradient-3"
+                  />
+                  <linearGradient
+                    id="linear-gradient-18"
+                    x1="2763.17"
+                    y1="2350.66"
+                    x2="2635.3"
+                    y2="2583.75"
+                    xlink:href="#linear-gradient-3"
+                  />
+                  <linearGradient
+                    id="linear-gradient-19"
+                    x1="7537.08"
+                    y1="2345.99"
+                    x2="7402.01"
+                    y2="2592.21"
+                    gradientTransform="matrix(0, -1, -1, 0, 2803.01, 7831.54)"
+                    xlink:href="#linear-gradient-3"
+                  />
+                  <linearGradient
+                    id="linear-gradient-20"
+                    x1="7531.85"
+                    y1="2350.66"
+                    x2="7403.98"
+                    y2="2583.75"
+                    gradientTransform="matrix(0, -1, -1, 0, 2803.01, 7831.54)"
+                    xlink:href="#linear-gradient-3"
+                  />
+                  <linearGradient
+                    id="linear-gradient-21"
+                    x1="1825.14"
+                    y1="188.16"
+                    x2="2050.07"
+                    y2="188.16"
+                    gradientTransform="matrix(0, -1, 1, 0, 153.18, 2342.87)"
+                    xlink:href="#linear-gradient"
+                  />
+                  <linearGradient
+                    id="linear-gradient-22"
+                    x1="1583.78"
+                    y1="308.84"
+                    x2="1808.71"
+                    y2="308.84"
+                    gradientTransform="translate(-223.51 2016.18) rotate(-90)"
+                    xlink:href="#linear-gradient-8"
+                  />
+                  <linearGradient
+                    id="linear-gradient-23"
+                    x1="2768.4"
+                    y1="2516.66"
+                    x2="2633.33"
+                    y2="2762.87"
+                    xlink:href="#linear-gradient-3"
+                  />
+                  <linearGradient
+                    id="linear-gradient-24"
+                    x1="2763.17"
+                    y1="2521.33"
+                    x2="2635.3"
+                    y2="2754.41"
+                    xlink:href="#linear-gradient-3"
+                  />
+                </defs>
+                <g style="isolation:isolate">
+                  <g id="Layer_1" data-name="Layer 1">
+                    <g
+                      id="element"
+                      class="transition-all ease-in group-hover:-translate-y-14 group-hover:translate-x-8 group-hover:opacity-10 group-hover:shadow dark:group-hover:brightness-125"
+                    >
+                      <rect
+                        id="Shape"
+                        x="280.99"
+                        y="24.99"
+                        width="120.68"
+                        height="120.68"
+                        transform="translate(643.03 -95.69) rotate(135)"
+                        style="fill:url(#linear-gradient)"
+                      />
+                    </g>
+                    <g
+                      id="element-2"
+                      data-name="element"
+                      class="transition-all duration-500 ease-in group-hover:-translate-y-8 group-hover:translate-x-4 group-hover:shadow"
+                    >
+                      <rect
+                        id="Shape-2"
+                        data-name="Shape"
+                        x="195.66"
+                        y="110.33"
+                        width="120.68"
+                        height="120.68"
+                        transform="translate(557.7 110.33) rotate(135)"
+                        style="fill:url(#linear-gradient-2)"
+                      />
+                      <polygon
+                        id="Shadow"
+                        points="341.33 170.67 256 85.33 227.67 113.66 341.33 170.67"
+                        style="mix-blend-mode:multiply;fill:url(#linear-gradient-3)"
+                      />
+                      <polygon
+                        id="Shadow-2"
+                        data-name="Shadow"
+                        points="341.33 170.67 256 85.33 244.79 96.54 341.33 170.67"
+                        style="mix-blend-mode:multiply;fill:url(#linear-gradient-4)"
+                      />
+                      <polygon
+                        id="Shadow-3"
+                        data-name="Shadow"
+                        points="341.33 170.67 256 256 227.67 227.67 341.33 170.67"
+                        style="mix-blend-mode:multiply;fill:url(#linear-gradient-5)"
+                      />
+                      <polygon
+                        id="Shadow-4"
+                        data-name="Shadow"
+                        points="341.33 170.67 256 256 244.79 244.79 341.33 170.67"
+                        style="mix-blend-mode:multiply;fill:url(#linear-gradient-6)"
+                      />
+                    </g>
+                    <g
+                      id="element-3"
+                      data-name="element"
+                      class="transition-all ease-in group-hover:translate-x-12 group-hover:opacity-10 group-hover:shadow"
+                    >
+                      <rect
+                        id="Shape-3"
+                        data-name="Shape"
+                        x="280.99"
+                        y="195.66"
+                        width="120.68"
+                        height="120.68"
+                        transform="translate(763.71 195.66) rotate(135)"
+                        style="fill:url(#linear-gradient-7)"
+                      />
+                    </g>
+                    <g
+                      id="element-4"
+                      data-name="element"
+                      class="transition-all duration-500 ease-in group-hover:-translate-x-4  group-hover:-translate-y-8 group-hover:shadow"
+                    >
+                      <rect
+                        id="Shape-4"
+                        data-name="Shape"
+                        x="24.99"
+                        y="110.33"
+                        width="120.68"
+                        height="120.68"
+                        transform="translate(266.35 231.01) rotate(135)"
+                        style="fill:url(#linear-gradient-8)"
+                      />
+                      <polygon
+                        id="Shadow-5"
+                        data-name="Shadow"
+                        points="170.67 170.67 85.33 256 57.01 227.67 170.67 170.67"
+                        style="mix-blend-mode:multiply;fill:url(#linear-gradient-9)"
+                      />
+                      <polygon
+                        id="Shadow-6"
+                        data-name="Shadow"
+                        points="170.67 170.67 85.33 256 74.13 244.79 170.67 170.67"
+                        style="mix-blend-mode:multiply;fill:url(#linear-gradient-10)"
+                      />
+                    </g>
+                    <g id="element-5" data-name="element">
+                      <rect
+                        id="Shape-5"
+                        data-name="Shape"
+                        x="110.33"
+                        y="195.66"
+                        width="120.68"
+                        height="120.68"
+                        transform="translate(472.37 316.34) rotate(135)"
+                        style="fill:url(#linear-gradient-11)"
+                      />
+                      <polygon
+                        id="Shadow-7"
+                        data-name="Shadow"
+                        points="256 256 170.67 170.67 142.34 198.99 256 256"
+                        style="mix-blend-mode:multiply;fill:url(#linear-gradient-12)"
+                      />
+                      <polygon
+                        id="Shadow-8"
+                        data-name="Shadow"
+                        points="256 256 170.67 170.67 159.46 181.88 256 256"
+                        style="mix-blend-mode:multiply;fill:url(#linear-gradient-13)"
+                      />
+                      <polygon
+                        id="Shadow-9"
+                        data-name="Shadow"
+                        points="256 256 170.67 341.33 142.34 313.01 256 256"
+                        style="mix-blend-mode:multiply;fill:url(#linear-gradient-14)"
+                      />
+                      <polygon
+                        id="Shadow-10"
+                        data-name="Shadow"
+                        points="256 256 170.67 341.33 159.46 330.13 256 256"
+                        style="mix-blend-mode:multiply;fill:url(#linear-gradient-15)"
+                      />
+                    </g>
+                    <g
+                      id="element-6"
+                      data-name="element"
+                      class="transition-all duration-500 ease-in group-hover:translate-x-4  group-hover:translate-y-8 group-hover:shadow"
+                    >
+                      <rect
+                        id="Shape-6"
+                        data-name="Shape"
+                        x="195.66"
+                        y="280.99"
+                        width="120.68"
+                        height="120.68"
+                        transform="translate(678.38 401.67) rotate(135)"
+                        style="fill:url(#linear-gradient-16)"
+                      />
+                      <polygon
+                        id="Shadow-11"
+                        data-name="Shadow"
+                        points="341.33 341.33 256 256 227.67 284.33 341.33 341.33"
+                        style="mix-blend-mode:multiply;fill:url(#linear-gradient-17)"
+                      />
+                      <polygon
+                        id="Shadow-12"
+                        data-name="Shadow"
+                        points="341.33 341.33 256 256 244.79 267.21 341.33 341.33"
+                        style="mix-blend-mode:multiply;fill:url(#linear-gradient-18)"
+                      />
+                      <polygon
+                        id="Shadow-13"
+                        data-name="Shadow"
+                        points="341.33 341.33 256 426.67 227.67 398.34 341.33 341.33"
+                        style="mix-blend-mode:multiply;fill:url(#linear-gradient-19)"
+                      />
+                      <polygon
+                        id="Shadow-14"
+                        data-name="Shadow"
+                        points="341.33 341.33 256 426.67 244.79 415.46 341.33 341.33"
+                        style="mix-blend-mode:multiply;fill:url(#linear-gradient-20)"
+                      />
+                    </g>
+                    <g
+                      id="element-7"
+                      data-name="element"
+                      class="transition-all ease-in group-hover:translate-x-8 group-hover:translate-y-14 group-hover:opacity-10 group-hover:shadow"
+                    >
+                      <rect
+                        id="Shape-7"
+                        data-name="Shape"
+                        x="280.99"
+                        y="366.33"
+                        width="120.68"
+                        height="120.68"
+                        transform="translate(884.39 487.01) rotate(135)"
+                        style="fill:url(#linear-gradient-21)"
+                      />
+                    </g>
+                    <g
+                      id="element-8"
+                      data-name="element"
+                      class="transition-all duration-500 ease-in group-hover:-translate-x-4 group-hover:translate-y-8 group-hover:shadow"
+                    >
+                      <rect
+                        id="Shape-8"
+                        data-name="Shape"
+                        x="24.99"
+                        y="280.99"
+                        width="120.68"
+                        height="120.68"
+                        transform="translate(387.03 522.35) rotate(135)"
+                        style="fill:url(#linear-gradient-22)"
+                      />
+                      <polygon
+                        id="Shadow-15"
+                        data-name="Shadow"
+                        points="170.67 341.33 85.33 256 57.01 284.33 170.67 341.33"
+                        style="mix-blend-mode:multiply;fill:url(#linear-gradient-23)"
+                      />
+                      <polygon
+                        id="Shadow-16"
+                        data-name="Shadow"
+                        points="170.67 341.33 85.33 256 74.13 267.21 170.67 341.33"
+                        style="mix-blend-mode:multiply;fill:url(#linear-gradient-24)"
+                      />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </div>
+          <h1 class="text-5xl font-thin sm:text-5xl md:text-5xl">
+            <span
+              class="bg-gradient-to-r bg-gradient-to-r from-indigo-600 to-sky-600 bg-clip-text text-transparent saturate-200 dark:from-indigo-400 dark:to-sky-400"
+            >Ex</span
+            >panse
+          </h1>
+        </div>
+      </header>
+
+      <footer class="py-16 text-center text-slate-400 text-sm text-black dark:text-slate-600">
+        <span
+          class="text-blue-600 font-medium bg-gradient-to-r bg-gradient-to-r from-indigo-600 to-sky-600 bg-clip-text text-transparent saturate-200 dark:from-indigo-400 dark:to-sky-400">v{{ expanse_version }}</span>
+        — Python <span class="font-medium text-slate-700 dark:text-slate-400">v{{ python_version }}</span>
+      </footer>
+    </div>
+  </div>
+</div>
+</body>
+</html>
