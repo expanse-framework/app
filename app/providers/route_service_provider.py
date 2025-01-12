@@ -7,9 +7,5 @@ from expanse.routing.router import Router
 
 class RouteServiceProvider(ServiceProvider):
     async def boot(self, router: Router, application: Application) -> None:
-        await self.load_routes_from_file(
-            router, application.base_path.joinpath("routes/api.py")
-        )
-        await self.load_routes_from_file(
-            router, application.base_path.joinpath("routes/web.py")
-        )
+        await self.load_routes_from_file(router, application.path("routes/api.py"))
+        await self.load_routes_from_file(router, application.path("routes/web.py"))

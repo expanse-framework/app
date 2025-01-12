@@ -1,17 +1,10 @@
-[tool.poetry]
-description = ""
-authors = ["Your Name <you@example.com>"]
-readme = "README.md"
+[project]
+name = "app"
+version = "0.1.0"
 
-package-mode = false
+requires-python = "~=3.11"
 
-[tool.poetry.dependencies]
-python = "^3.11"
-expanse = "^0.5.0"
-
-[tool.poetry.group.test.dependencies]
-pytest = ">=8.3.3"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+dependencies = [
+    "expanse>=0.5.0",
+    "pytest>=8.3.3",
+]
