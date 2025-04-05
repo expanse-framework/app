@@ -4,6 +4,18 @@ from expanse.testing.client import TestClient
 from expanse.testing.command_tester import CommandTester
 
 
+@pytest.fixture(scope="session", autouse=True)
+async def bootstrap() -> None:
+    """
+    Bootstrap the application for testing.
+    """
+    from app.app import app
+
+    await app.bootstrap()
+
+    app.config["app.environment"] = "testing"
+
+
 @pytest.fixture()
 def client() -> TestClient:
     from app.app import app
