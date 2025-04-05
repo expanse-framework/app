@@ -1,11 +1,12 @@
+from expanse.contracts.routing.router import Router
 from expanse.core.application import Application
-from expanse.core.support.providers.route_service_provider import (
-    RouteServiceProvider as ServiceProvider,
-)
-from expanse.routing.router import Router
+from expanse.support.service_provider import ServiceProvider
 
 
 class RouteServiceProvider(ServiceProvider):
     async def boot(self, router: Router, application: Application) -> None:
-        await self.load_routes_from_file(router, application.path("routes/api.py"))
-        await self.load_routes_from_file(router, application.path("routes/web.py"))
+        with router.group("api", prefix="/api") as api:
+            api.middleware("api").load_file(application.path("routes/api.py"))
+
+        with router.group() as web:
+            web.middleware("web").load_file(application.path("routes/web.py"))

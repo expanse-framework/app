@@ -1,7 +1,7 @@
-from expanse.routing.router import Router
+from expanse.contracts.routing.registrar import Registrar
 
 
-def routes(router: Router) -> None:
+def routes(router: Registrar) -> None:
     from app.http.controllers.welcome import WelcomeController
 
-    router.get("/", WelcomeController.index)
+    router.controller(WelcomeController)
