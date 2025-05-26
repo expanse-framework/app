@@ -13,7 +13,7 @@ async def bootstrap() -> None:
 
     await app.bootstrap()
 
-    app.config["app.environment"] = "testing"
+    app.config["app.environment"] = "test"
 
 
 @pytest.fixture()
