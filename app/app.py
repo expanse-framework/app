@@ -19,10 +19,6 @@ providers = (
     .merge(
         [
             # Application-specific providers
-            "app.providers.vite_service_provider.ViteServiceProvider",
-            "app.providers.route_service_provider.RouteServiceProvider",
-            "app.providers.app_service_provider.AppServiceProvider",
-            "expanse.schematic.schematic_service_provider.SchematicServiceProvider",
         ]
     )
 )
