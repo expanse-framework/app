@@ -19,6 +19,8 @@ providers = (
     .merge(
         [
             # Application-specific providers
+            "app.providers.route_service_provider.RouteServiceProvider",
+            "app.providers.app_service_provider.AppServiceProvider",
         ]
     )
 )

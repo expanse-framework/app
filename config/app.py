@@ -1,10 +1,7 @@
 from __future__ import annotations
 
-from pydantic import Field
 from pydantic_settings import BaseSettings
 from pydantic_settings import SettingsConfigDict
-
-from expanse.support.service_providers_list import ServiceProvidersList
 
 
 class Config(BaseSettings):
@@ -34,28 +31,5 @@ class Config(BaseSettings):
     # This must be set prior to deploying the application.
     # Configured with the `APP_SECRET_KEY` environment variable.
     secret_key: str = ""
-
-    # Service providers
-    #
-    # You can list here the service providers that you want to register automatically
-    # in your application.
-    providers: list[str] = Field(
-        default=(
-            ServiceProvidersList.default()
-            .merge(
-                [
-                    # Package-provided providers
-                ]
-            )
-            .merge(
-                [
-                    # Application service providers
-                    "app.providers.app_service_provider.AppServiceProvider",
-                    "app.providers.route_service_provider.RouteServiceProvider",
-                ]
-            )
-            .to_list()
-        )
-    )
 
     model_config = SettingsConfigDict(env_prefix="app_")
