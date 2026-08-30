@@ -5,17 +5,17 @@ version = "0.1.0"
 requires-python = ">=3.12"
 
 dependencies = [
-    "expanse>=0.5.0",
+    "expanse>=0.7.0",
     # aiosqlite is need for the sqlite database backend
     # which is the default. If you want to use a different backend,
     # you can install the corresponding package.
-    "aiosqlite>=0.21.0",
+    "aiosqlite>=0.22.1",
 ]
 
 [dependency-groups]
 test = [
-    "pytest>=8.3.3",
-    "pytest-asyncio>=1.0.0",
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
 ]
 
 
